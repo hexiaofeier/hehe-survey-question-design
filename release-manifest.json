@@ -30,14 +30,14 @@
     "references/variable_library.md": "381c95cb2301b21a4a39f3c99c3bcb6cd409034ba1fe89dad9d0bce2b7fb7a0d"
   },
   "public_sha256": {
-    "SKILL.md": "b471f22ca5ed2c85d177197502a6e9050536392c058b728edb6513511de6c2c8",
-    "references/archaeology_summary.md": "caaed1d155c4427efb78539ad618d876a67c5f2457995c682d7f1e3cf41624c0",
-    "references/design_workpaper_schema.md": "343f61a429f67c27fd06773a73bd2ae90f10c64ff10d13d6afc55663fa71f93f",
-    "references/output_schema.md": "7467bb78be5f8d1bd045952350b2baa847a2903fb830361c4542b3d8472a1425",
-    "references/quality_check_rules.md": "4e57a967abb69c380715714e09d564b135e68013c466a5bd361ee12f354a065a",
-    "references/question_design_methods.md": "e8321ef3e49b52394c6469595a818c0490494bff9d9a43de88ed5252e7ad6057",
-    "references/specialized_question_modules.md": "3e2b37559194151ab6c524159efd324018bf9c6f5547ad4a64e30dc18ff63953",
-    "references/variable_library.md": "8434fb3e3eb45f70c883108db3ebcf59b6572944178ad684db731894891a98d0"
+    "SKILL.md": "caaeeee3e17537488e2a022e0b4fea39aec744d377c250ad4be95cd252d521f2",
+    "references/archaeology_summary.md": "c270043555be5f597e7262b997e41037a90bc9bc19af7b01d36a895df23a7a81",
+    "references/design_workpaper_schema.md": "463d2e6dcc146af9c986b942f73991d9d80ac40c2c9e0df374f1272ec8a98b52",
+    "references/output_schema.md": "e7c41e0fb37fc2d26fb9c618d13ce406234566b422858cb13f1151244d90e1bf",
+    "references/quality_check_rules.md": "155a8bd6f0379b1420073564475214df5f95f2119def888d24efe05a515009e5",
+    "references/question_design_methods.md": "860f4373d10d1015b01b865993845eaab05d59ee4e77948dedd9b732e16e099d",
+    "references/specialized_question_modules.md": "41560add1f5e7cc144b8e5c5136a8a20d01afd6dc6c19db4c7d76ee131d1a7d2",
+    "references/variable_library.md": "381c95cb2301b21a4a39f3c99c3bcb6cd409034ba1fe89dad9d0bce2b7fb7a0d"
   },
   "examples": {
     "type": "simulated design, no respondent data",
