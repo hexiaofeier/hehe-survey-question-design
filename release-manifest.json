@@ -2,7 +2,7 @@
   "schema_version": 1,
   "display_name": "盒盒用户调研问卷设计 Skill",
   "repository_slug": "hehe-survey-question-design",
-  "version": "2026.10.02-v1",
+  "version": "2026.11.02-v1",
   "namespace": "hehe-",
   "entry_skill": "hehe-survey-question-design",
   "install_policy": "standalone",
@@ -20,24 +20,24 @@
     "references/variable_library.md"
   ],
   "source_sha256": {
-    "SKILL.md": "3acb3c0d65444e06d2a4bc9a4f0d16df9d130a6ce26df10b8f31406bacc6774c",
-    "references/archaeology_summary.md": "c85da1ee8531ca5fe466f245bc2a05ea74baf076f455ec972dc3ade7c0e979bd",
-    "references/design_workpaper_schema.md": "463d2e6dcc146af9c986b942f73991d9d80ac40c2c9e0df374f1272ec8a98b52",
-    "references/output_schema.md": "e7c41e0fb37fc2d26fb9c618d13ce406234566b422858cb13f1151244d90e1bf",
-    "references/quality_check_rules.md": "155a8bd6f0379b1420073564475214df5f95f2119def888d24efe05a515009e5",
-    "references/question_design_methods.md": "860f4373d10d1015b01b865993845eaab05d59ee4e77948dedd9b732e16e099d",
+    "SKILL.md": "1e4db3853a8b7cd7a8ef658f9ffda0d791bfb0f7f1ebd07a377ecf7470ea4982",
+    "references/archaeology_summary.md": "be3a78bd21a1f17cd1bb7bddf4365a9299d8c59b220375d7d18dc4322c7ec638",
+    "references/design_workpaper_schema.md": "710ad2b17c0b41e94fb17b5f220b4936da1208ef1bfc345a485ef8fe5df10aed",
+    "references/output_schema.md": "c64a6a65898443bce2ccd06e4b149d12c2de4fb0abb7bccf3625f5715dc345a0",
+    "references/quality_check_rules.md": "4a2e06e1ff1b20e437bf5c56f172a422610c0ac178ddec68b0c8cbe4730881e4",
+    "references/question_design_methods.md": "7a3e229d27d6f9e0227dca675d879f82383c51a25a733776a11ece78b5feefc1",
     "references/specialized_question_modules.md": "41560add1f5e7cc144b8e5c5136a8a20d01afd6dc6c19db4c7d76ee131d1a7d2",
-    "references/variable_library.md": "381c95cb2301b21a4a39f3c99c3bcb6cd409034ba1fe89dad9d0bce2b7fb7a0d"
+    "references/variable_library.md": "9ec9fa577dc8364334c6cfdff78b3371645b690b88463390025af7ee2bf2e275"
   },
   "public_sha256": {
-    "SKILL.md": "caaeeee3e17537488e2a022e0b4fea39aec744d377c250ad4be95cd252d521f2",
-    "references/archaeology_summary.md": "c270043555be5f597e7262b997e41037a90bc9bc19af7b01d36a895df23a7a81",
-    "references/design_workpaper_schema.md": "463d2e6dcc146af9c986b942f73991d9d80ac40c2c9e0df374f1272ec8a98b52",
-    "references/output_schema.md": "e7c41e0fb37fc2d26fb9c618d13ce406234566b422858cb13f1151244d90e1bf",
-    "references/quality_check_rules.md": "155a8bd6f0379b1420073564475214df5f95f2119def888d24efe05a515009e5",
-    "references/question_design_methods.md": "860f4373d10d1015b01b865993845eaab05d59ee4e77948dedd9b732e16e099d",
+    "SKILL.md": "f4baf8b269e7ec9d827f9fb23f96ec41e5311302ef5cc81c94efe32e57adef63",
+    "references/archaeology_summary.md": "871e96abc55ee0d6654f37b0bbbd0e9b6f8f0585abd3431f362ab3b041100863",
+    "references/design_workpaper_schema.md": "710ad2b17c0b41e94fb17b5f220b4936da1208ef1bfc345a485ef8fe5df10aed",
+    "references/output_schema.md": "c64a6a65898443bce2ccd06e4b149d12c2de4fb0abb7bccf3625f5715dc345a0",
+    "references/quality_check_rules.md": "4a2e06e1ff1b20e437bf5c56f172a422610c0ac178ddec68b0c8cbe4730881e4",
+    "references/question_design_methods.md": "7a3e229d27d6f9e0227dca675d879f82383c51a25a733776a11ece78b5feefc1",
     "references/specialized_question_modules.md": "41560add1f5e7cc144b8e5c5136a8a20d01afd6dc6c19db4c7d76ee131d1a7d2",
-    "references/variable_library.md": "381c95cb2301b21a4a39f3c99c3bcb6cd409034ba1fe89dad9d0bce2b7fb7a0d"
+    "references/variable_library.md": "9ec9fa577dc8364334c6cfdff78b3371645b690b88463390025af7ee2bf2e275"
   },
   "examples": {
     "type": "simulated design, no respondent data",
@@ -50,10 +50,41 @@
     ]
   },
   "validation": {
-    "local_questionnaire_checks": 58,
-    "latest_platform_import": "pending",
-    "word_visual_review": "pending",
-    "human_pretest": "pending",
-    "advanced_methods_field_validation": "pending"
-  }
+    "runtime_structure": "passed",
+    "source_export_parity": "passed",
+    "primary_example_questionnaire_consistency": "passed",
+    "primary_example_static_routes": 90978,
+    "word_native_open_and_pdf_export": "passed",
+    "word_visual_review": "8-page candidate accepted by user",
+    "word_full_xsd": "not completed: external schema unavailable",
+    "platform_operation": "not part of default file delivery",
+    "human_pretest": "not performed for simulated examples",
+    "advanced_methods_field_validation": "not claimed"
+  },
+  "example_sets": [
+    {
+      "directory": "examples/age-friendly-renovation",
+      "questions": 38,
+      "files": [
+        "questionnaire-design.md",
+        "questionnaire-design.docx",
+        "questionnaire-import.md"
+      ],
+      "primary": false
+    },
+    {
+      "directory": "examples/public-charging",
+      "questions": 29,
+      "files": [
+        "questionnaire-design.md",
+        "questionnaire-design.docx",
+        "questionnaire-import.md",
+        "reading-preview.pdf"
+      ],
+      "primary": true,
+      "word_pages": 8,
+      "editable_tables": 27,
+      "matrix_rows": 6
+    }
+  ]
 }

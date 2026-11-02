@@ -6,7 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-244C66.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-82B29B.svg)](https://agentskills.io/)
-[![Release](https://img.shields.io/badge/release-2026.10.02--v1-C98B5B.svg)](release-manifest.json)
+[![Release](https://img.shields.io/badge/release-2026.11.02--v1-C98B5B.svg)](release-manifest.json)
 [![Standalone](https://img.shields.io/badge/install-standalone-245B78.svg)](#安装与开始使用)
 [![Deliverables](https://img.shields.io/badge/交付-MD详稿%20%2B%20Word详稿%20%2B%20MD导入稿-B73F42.svg)](#三份文件各有用途)
 
@@ -14,7 +14,21 @@
 
 适合市场研究、用户研究、产品体验、新品需求验证、竞品比较和付费研究。支持从零设计，也支持修改现有问卷、检查漏题和梳理复杂逻辑。
 
-**[查看完整示例](examples/age-friendly-renovation/questionnaire-design.md) · [下载Word详稿](examples/age-friendly-renovation/questionnaire-design.docx) · [查看平台导入稿](examples/age-friendly-renovation/questionnaire-import.md) · [快速开始](#安装与开始使用)**
+**[查看完整示例](examples/public-charging/questionnaire-design.md) · [下载Word详稿](examples/public-charging/questionnaire-design.docx) · [查看平台导入稿](examples/public-charging/questionnaire-import.md) · [快速开始](#安装与开始使用)**
+
+## 2026.11.02 更新：问卷设计完整，Word也要方便阅读
+
+**这次把问卷文稿的阅读、分流和交付细节做实了。** 三份文件继续分别用于设计确认、Word批注和平台文本导入；Word采用表格选项与清楚的文字层次，Markdown导入稿继续保持纯文本格式。
+
+| 本次更新 | 使用时的变化 |
+|---|---|
+| **Word阅读版** | A4竖版；题干10.5磅、表格选项9.5磅、灰色说明8.5磅，矩阵保留真正的行列结构 |
+| **更完整的动态逻辑** | 已选项引用保留原代码，多个分支同时命中、没有可选项和跳转后的显示条件都有处理方式 |
+| **题目和底稿对应** | 完整题目与配置只维护在详稿，变量、字段、Base和分析用途按题号关联 |
+| **产品测试与样本口径** | 补充比较组、品牌和价格展示顺序、体验顺序、招募来源与计样规则 |
+| **文件交付即可完成** | 默认完成三稿及静态核对；平台导入、在线配置、发布和回收由用户另行提出 |
+
+新增[新能源汽车公共充电完整示例](examples/public-charging/questionnaire-design.md)：29题、六个部分、8页Word。覆盖纯电／插混／增程、近期使用与未使用、动态痛点追问和不同费用口径。[查看更新说明](docs/updates-2026.11.02.md)。
 
 ## 从一句需求，到可以讨论和执行的设计
 
@@ -89,7 +103,7 @@ flowchart LR
     D --> E[题目与逻辑]
     E --> F[分析用途]
     F --> G[三份交付文稿]
-    G --> H[质检与预试修订]
+    G --> H[静态核对与修订]
 ```
 
 设计底稿保留研究问题、变量、分析用途、字段字典和质检记录。需要设计依据或完整设计包时，可以要求一并提供；日常审阅直接看问卷详稿。
@@ -102,11 +116,11 @@ flowchart LR
 
 | 文件 | 给谁用 | 包含什么 | 完整示例 |
 |---|---|---|---|
-| **Markdown建卷详稿** | 研究人员、产品团队、客户 | 设计说明、主题分区、题干选项和简明配置标签 | [阅读MD](examples/age-friendly-renovation/questionnaire-design.md) |
-| **Word建卷详稿** | 需要批注、讨论和修改文档的人 | 与MD详稿同版同内容 | [下载Word](examples/age-friendly-renovation/questionnaire-design.docx) |
-| **Markdown导入稿** | 问卷平台建卷人员 | 按文本导入格式排列的题目与选项 | [阅读MD](examples/age-friendly-renovation/questionnaire-import.md) |
+| **Markdown建卷详稿** | 研究人员、产品团队、客户 | 设计说明、主题分区、题干选项和简明配置标签 | [阅读MD](examples/public-charging/questionnaire-design.md) |
+| **Word阅读详稿** | 需要批注、讨论和修改文档的人 | 与MD详稿同版同内容；选项表格、矩阵、小字灰色说明 | [下载Word](examples/public-charging/questionnaire-design.docx) |
+| **Markdown导入稿** | 问卷平台建卷人员 | 按文本导入格式排列的题目与选项 | [阅读MD](examples/public-charging/questionnaire-import.md) |
 
-默认使用问卷星文本导入格式。导入稿可复制到相应文本创建入口；跳转、配额、随机和不支持文本导入的说明，依据详稿在平台完成配置。其他平台可在提出需求时指定。
+默认使用问卷星文本导入格式。需要建卷时，导入稿可复制到相应文本创建入口；跳转、配额、随机和不支持文本导入的说明由建卷人员依据详稿配置。Skill默认止于文件交付；平台导入、在线配置、预览、发布和回收仅在用户另行要求时执行。其他平台可在提出需求时指定。
 
 详稿中的一道题可以这样写：
 
@@ -125,7 +139,46 @@ flowchart LR
 
 内部代码对应原选项顺序，受访者看到的选项不加A/B/C/D前缀。默认必答；不写显示条件时，所有合格受访者回答。
 
-## 完整示例：家庭适老化改造
+## Word阅读版：题目清楚，配置说明退到辅助层
+
+Word与Markdown详稿保留同样的题干、选项、逻辑标签、说明和分区，只改变阅读排版。普通选项一项一行排入可编辑表格；矩阵按行项目和列选项展开。题干加粗，配置标签与解释用更小的灰字，便于审阅时区分。
+
+| 内容 | 默认样式 |
+|---|---|
+| 文档与分区标题 | 17磅／12磅，深蓝加粗 |
+| 题干 | 10.5磅，黑色加粗 |
+| 选项 | 9.5磅，原生可编辑表格 |
+| 逻辑与文字说明 | 8.5磅，灰色，紧随题干 |
+
+![公共充电问卷Word实际页面：说明、甄别与表格选项](docs/images/public-charging-word-01.png)
+
+*实际生成的Word第一页；可下载原文件继续批注和修改。*
+
+![公共充电问卷Word实际页面：费用题与六行满意度矩阵](docs/images/public-charging-word-05.png)
+
+*费用题区分电费、服务费和停车费；矩阵保留六个评价项目与完整量尺。*
+
+## 完整示例：新能源汽车公共充电
+
+模拟一家公共充电运营商，希望判断应优先改善找站、等候、设备、费用说明还是问题处理。
+
+| 设计要素 | 本例设置 |
+|---|---|
+| 研究对象 | 中国大陆成年驾驶者，所选新能源汽车以私人或家庭出行为主 |
+| 评价对象 | 每人固定一辆车；最近一次体验与近30天问题分别测量 |
+| 问卷体量 | 29题、六个部分；每人实际作答14—28题，矩阵另含6行评价 |
+| 主要分流 | 零成功使用者回答未使用原因；近期使用者评价最近一次，并按实际痛点追问 |
+| 动态处理 | 痛点、优先改进引用已选项，单项时自动记录；后续问题显示对应问题原文 |
+| Word效果 | 8页，26张普通选项表格＋1张六行矩阵，题干与相应表格同页 |
+| 样本与配额 | 此轮只测试问卷设计，不预设样本量或人群硬配额 |
+
+**[MD建卷详稿](examples/public-charging/questionnaire-design.md) · [Word阅读详稿](examples/public-charging/questionnaire-design.docx) · [MD导入稿](examples/public-charging/questionnaire-import.md) · [PDF阅读预览](examples/public-charging/reading-preview.pdf)**
+
+以上均为模拟设计文件，没有真实回收数据。PDF只用于预览Word的排版，默认问卷交付仍为上述三稿。
+
+## 历史示例：家庭适老化改造
+
+[查看旧版三稿](examples/age-friendly-renovation/questionnaire-design.md)。历史文稿保留当时的设计与Word形式；当前Word阅读格式以公共充电示例为准。
 
 仓库提供一套**模拟研究设计**：了解老旧小区家庭的改造需求、家庭决策、付费障碍和方案接受度。
 
@@ -196,13 +249,23 @@ git clone https://github.com/hexiaofeier/hehe-survey-question-design.git
 
 ## 已验证到哪里
 
-已经做过职场任务、宠物用品、扫地机器人体验、适老化改造等设计测试。职场任务案例完成过问卷星文本导入及部分分流实测；最新适老化V3完成58项本地路径与文件检查、Word结构检查和MD／Word内容对照。
+此前做过职场任务、宠物用品、扫地机器人体验和适老化改造等设计测试。职场任务案例曾完成问卷星文本导入及部分分流实测；这些经历不代表后续每个案例都已经上线。
 
-**首版验证范围：** 最新复杂案例的问卷星实导、Word页面视觉和真人认知预试仍待完成；Kano、价格、MaxDiff、联合分析等新增参考尚未逐方法开展真实项目验收。
+本次公共充电示例完成三稿内容对照、显示与跳转规则静态走查，以及Word实际打开、分页和PDF预览。29题和27张可编辑表格、分区、说明、逻辑标签均保留；独立审阅发现的问题已修正。商用洗碗机测试另覆盖了多设备现场体验和五组矩阵。
 
-## 首版更新内容
+当前验证是文件与设计检查。真实受访者对题意的理解和实际用时，仍需在具体项目中验证；Kano、价格测试、MaxDiff和联合分析等方法尚未逐项完成真实项目验收。默认交付不安排平台导入或上线。
 
-**2026-10-02 · v1**
+## 更新记录
+
+**2026-11-02 · v1**
+
+- 同步问卷设计方法、样本与计样、局部修改同步三稿等微调，保留原八步设计流程和全部专项题组。
+- 固定Word阅读版的表格、字号、颜色和分页规格，Markdown两稿格式保持。
+- 细化动态引用、多分支与原选项代码处理，去掉过严的背景题删除规则。
+- 默认完成问卷文件与静态核对，不把平台操作或真人预试当成文件交付的前提。
+- 增加公共充电29题三稿、8页PDF预览和Word实图；保留旧版适老化示例。
+
+### 2026-10-02 · 首版
 
 - 完整八步设计流程与七份配套reference。
 - 统一MD详稿、Word详稿、MD导入稿三份交付。
@@ -221,7 +284,8 @@ hehe-survey-question-design/
 ├── LICENSE
 ├── release-manifest.json
 ├── docs/images/                         # 封面与交付示意
-├── examples/age-friendly-renovation/     # 模拟问卷三份文稿
+├── examples/public-charging/            # 新版三稿与Word阅读预览
+├── examples/age-friendly-renovation/     # 保留的历史模拟设计
 ├── scripts/validate_release.py
 └── skills/hehe-survey-question-design/
     ├── SKILL.md
