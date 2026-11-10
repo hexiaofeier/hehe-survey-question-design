@@ -6,7 +6,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-244C66.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-82B29B.svg)](https://agentskills.io/)
-[![Release](https://img.shields.io/badge/release-2026.11.02--v1-C98B5B.svg)](release-manifest.json)
+[![Release](https://img.shields.io/badge/release-2026.11.10--v1-C98B5B.svg)](release-manifest.json)
 [![Standalone](https://img.shields.io/badge/install-standalone-245B78.svg)](#安装与开始使用)
 [![Deliverables](https://img.shields.io/badge/交付-MD详稿%20%2B%20Word详稿%20%2B%20MD导入稿-B73F42.svg)](#三份文件各有用途)
 
@@ -15,6 +15,25 @@
 适合市场研究、用户研究、产品体验、新品需求验证、竞品比较和付费研究。支持从零设计，也支持修改现有问卷、检查漏题和梳理复杂逻辑。
 
 **[查看完整示例](examples/public-charging/questionnaire-design.md) · [下载Word详稿](examples/public-charging/questionnaire-design.docx) · [查看平台导入稿](examples/public-charging/questionnaire-import.md) · [快速开始](#安装与开始使用)**
+
+## 2026.11.10 更新：让问卷设计与回收分析接得上
+
+**从题目到数据，研究目的可以继续沿用；两项Skill也各自独立。** 本次同步回收后的可选处理入口：将数据清洗、质量检查与统计交给 [盒盒问卷数据处理与统计分析 Skill](https://github.com/hexiaofeier/hehe-survey-analysis-workbook)，问卷设计仍交付原来的三份文稿。
+
+| 研究进行到这里 | 你可以怎样用 |
+|---|---|
+| **还在设计问卷** | 用本Skill拆解研究问题、安排题目与逻辑，交付MD详稿、Word详稿及MD导入稿 |
+| **已经收到Excel、CSV或SAV数据** | 如已安装 `hehe-survey-analysis-workbook`，可另行调用它检查、标记并分析样本 |
+| **只需要其中一项能力** | 两项Skill分别安装、分别调用；任何一项未安装，都不影响另一项完成自己的任务 |
+
+```mermaid
+flowchart LR
+    A[研究目标与材料] --> B[问卷设计：三份文稿]
+    B --> C[由项目执行招募与回收]
+    C -. 已取得数据后可选调用 .-> D[样本检查、标记与统计分析]
+```
+
+三稿格式、Word阅读排版、八步设计流程和专项题组参考沿用2026.11.02版。本次是下游入口同步，[查看本次更新说明](docs/updates-2026.11.10.md)。
 
 ## 2026.11.02 更新：问卷设计完整，Word也要方便阅读
 
@@ -251,11 +270,18 @@ git clone https://github.com/hexiaofeier/hehe-survey-question-design.git
 
 此前做过职场任务、宠物用品、扫地机器人体验和适老化改造等设计测试。职场任务案例曾完成问卷星文本导入及部分分流实测；这些经历不代表后续每个案例都已经上线。
 
-本次公共充电示例完成三稿内容对照、显示与跳转规则静态走查，以及Word实际打开、分页和PDF预览。29题和27张可编辑表格、分区、说明、逻辑标签均保留；独立审阅发现的问题已修正。商用洗碗机测试另覆盖了多设备现场体验和五组矩阵。
+2026.11.02公开的公共充电示例完成三稿内容对照、显示与跳转规则静态走查，以及Word实际打开、分页和PDF预览。29题和27张可编辑表格、分区、说明、逻辑标签均保留；独立审阅发现的问题已修正。商用洗碗机测试另覆盖了多设备现场体验和五组矩阵。
 
 当前验证是文件与设计检查。真实受访者对题意的理解和实际用时，仍需在具体项目中验证；Kano、价格测试、MaxDiff和联合分析等方法尚未逐项完成真实项目验收。默认交付不安排平台导入或上线。
 
 ## 更新记录
+
+**2026-11-10 · v1**
+
+- 将回收后的可选入口同步为合并后的样本清洗、质量检查与统计分析能力，移除旧验收入口提示。
+- 公开调用名称对应 `hehe-survey-analysis-workbook`，仍按环境中已安装的能力选用。
+- README补充设计与数据分析的使用分工；保留公共充电、适老化改造例稿及Word实图。
+
 
 **2026-11-02 · v1**
 

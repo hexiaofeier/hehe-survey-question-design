@@ -2,7 +2,7 @@
   "schema_version": 1,
   "display_name": "盒盒用户调研问卷设计 Skill",
   "repository_slug": "hehe-survey-question-design",
-  "version": "2026.11.02-v1",
+  "version": "2026.11.10-v1",
   "namespace": "hehe-",
   "entry_skill": "hehe-survey-question-design",
   "install_policy": "standalone",
@@ -20,7 +20,7 @@
     "references/variable_library.md"
   ],
   "source_sha256": {
-    "SKILL.md": "1e4db3853a8b7cd7a8ef658f9ffda0d791bfb0f7f1ebd07a377ecf7470ea4982",
+    "SKILL.md": "60de02eb03d0dc88d2962f75fd6e053b88e980422f99890ac0a17c5951f93db4",
     "references/archaeology_summary.md": "be3a78bd21a1f17cd1bb7bddf4365a9299d8c59b220375d7d18dc4322c7ec638",
     "references/design_workpaper_schema.md": "710ad2b17c0b41e94fb17b5f220b4936da1208ef1bfc345a485ef8fe5df10aed",
     "references/output_schema.md": "c64a6a65898443bce2ccd06e4b149d12c2de4fb0abb7bccf3625f5715dc345a0",
@@ -30,7 +30,7 @@
     "references/variable_library.md": "9ec9fa577dc8364334c6cfdff78b3371645b690b88463390025af7ee2bf2e275"
   },
   "public_sha256": {
-    "SKILL.md": "f4baf8b269e7ec9d827f9fb23f96ec41e5311302ef5cc81c94efe32e57adef63",
+    "SKILL.md": "8c6d0bae687a18b6b66803ffdd818eded6be94e85901864ca662ae06ffee2739",
     "references/archaeology_summary.md": "871e96abc55ee0d6654f37b0bbbd0e9b6f8f0585abd3431f362ab3b041100863",
     "references/design_workpaper_schema.md": "710ad2b17c0b41e94fb17b5f220b4936da1208ef1bfc345a485ef8fe5df10aed",
     "references/output_schema.md": "c64a6a65898443bce2ccd06e4b149d12c2de4fb0abb7bccf3625f5715dc345a0",
